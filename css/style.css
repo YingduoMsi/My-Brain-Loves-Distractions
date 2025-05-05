@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'PerfectlyNineties';
+    src: url('fonts/perfectly-nineties-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+/* 顶部导航栏 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+header h4,
+header h4 a {
+    margin: 0;
+    color:#FF52C4;
+    font-family: 'Bricolage Grotesque';
+    font-size: 16px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 7vw;
+    font-family: 'PerfectlyNineties', serif;
+    letter-spacing: -0.2vw;
+    text-align: center;
+  }
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-link {
+    border: 1.5px solid #FF52C4;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 加一点过渡动画更自然 */
+  }
+  
+  .top-link h4 {
+    margin: 0;
+    color: #FF52C4; /* 初始颜色为粉色 */
+  }
+  
+  .top-link:hover {
+    background-color: #FF52C4;
+  }
+  
+  .top-link:hover h4 {
+    color: white;
+  }
+
+/* 主体内容区域 */
+main {
+    padding-top: 70px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+p {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #555;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.images {
+    display: block;
+    margin: 0 auto;
+    /* 水平居中 */
+    max-width: 700px;
+    /* 最大宽度限制为 300px */
+    width: 100%;
+    /* 宽度自适应，配合 max-width 更灵活 */
+    height: auto;
+    /* 保持图片纵横比 */
+}
+
+.logo {
+    display: block;
+    margin: 0px auto;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    /* 水平居中 */
+    max-width: 600px;
+    /* 最大宽度限制为 300px */
+    width: 100%;
+    /* 宽度自适应，配合 max-width 更灵活 */
+    height: auto;
+    /* 保持图片纵横比 */
+}
+
+footer {
+    text-align: center; /* 让文本水平居中 */
+    padding: 20px;
+    background-color: #fdf0f5; /* 背景色 */
+    color: #555; /* 字体颜色 */
+    font-size: 14px;
+    display: flex;
+    flex-direction: column; /* 让子元素竖着排列 */
+    justify-content: center; /* 让内容在竖直方向上居中 */
+    align-items: center; /* 让内容在水平方向上居中 */
+    gap: 10px; /* 元素之间的间距 */
+}
